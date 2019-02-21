@@ -1,0 +1,700 @@
+html, body, div, span, applet, object, iframe, h1,
+h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt,var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label,legend, table, caption, tbody, tfoot, thead, tr, th,
+td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output,
+ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+body {
+    background-color: #f2f4f8;
+    min-width: 300px;
+}
+
+a {
+    text-decoration: none;
+}
+.center,
+.menucenter,
+.main {
+    max-width: 960px;
+    margin: 0 auto;
+    font: 14px Arial;
+}
+
+.logo {
+    width: 32px;
+    height: 20px;
+    margin: 18px 0 18px 6px;
+}
+header {
+    background-color: #2d313d;
+    box-shadow: 0 3px 0 #2d313d;
+}
+header .center {
+    background-color: #2d313d;
+    height: 59px;
+    align-items: center;
+}
+header .username{
+    padding-right:10px;
+}
+
+.headerItems {
+    float: right;
+    color: #727989;
+    font: 14px Arial;
+}
+
+.headerItems i {
+    font-size: 18px;
+}
+
+.headerItems a {
+    color: #727989;
+}
+.headerItems .cityname {
+    border-bottom: dashed 1px;
+    margin: 0 6px 0 22px;
+}
+.userPhoto {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 10px;
+    border-radius: 4px;
+
+}
+
+
+
+.container {
+    float: right;
+    padding-top: 15px;
+    width: 190px;
+}
+
+.container input[type="search"] {
+    border-radius: 7px;
+    margin-right: 0;
+    margin-left:15px;
+    width:0;
+    transition: width 0.7s ease;
+}
+
+.container .icon {
+    padding: 0;
+    z-index: 1;
+}
+.container a:active,
+.container a:focus input[type="search"] {
+    width: 120px;
+}
+.form .input input[type='text'] {
+    background: url(images/search.png) no-repeat 255px 9px;
+    background-size: 25px 25px;
+    background-color: white;
+}
+
+@media screen and (min-width: 641px) {
+    .mini {
+        display: none;
+    }
+
+    .main .content .miniform {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header .center {
+        display: none;
+    }
+    .container a:focus input[type="search"] {
+        width: 120px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mini {
+        display: block;
+    }
+
+    .mini i.fa-bars {
+        color: grey;
+    }
+
+
+    .mini .mobile {
+        background-color: #2d313d;
+        float: left;
+    }
+    .mini .mobile ul {
+        display: block;
+        margin: 0 -300px;
+        transition: margin .6s ease;
+        list-style: none;
+        position: absolute;
+        top: 80px;
+        background-color: #2d313d;
+        width: 150px;
+        border: solid black 2px;
+        font: 26px Arial;
+        z-index: 3;
+    }
+    .mini .mobile ul li {
+        padding: 3px 10px;
+
+    }
+    .mini .mobile ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .mini .mobile [type="checkbox"] {
+        display: none;
+    }
+    .mini label {
+        display: inline-block;
+        position: relative;
+    }
+
+
+    input.toggleMenu:checked~ul {
+        display: block;
+        margin: 0;
+        transition: margin .6s ease-in;
+
+    }
+
+    .main  .content {
+        width: 100%;
+    }
+
+    .main  .menu {
+        display: none;
+    }
+
+    .main .content h1 {
+        font-size: 50px;
+        padding: 50px 70px 35px 80px;
+        text-align: center;
+    }
+
+    .main .content h1 i {
+        padding: 0;
+    }
+
+    .main .content .form {
+        display: none;
+    }
+
+    /*  Поиск в content до 640px*/
+
+
+    .Search2 .icon2 i {
+        z-index: 1;
+        padding: 0;
+    }
+    .Search2 input[type='search']{
+        border-radius: 5px;
+        margin-right: 0;
+        width: 0;
+        z-index: 0;
+        transition: width 0.7s ease;
+    }
+
+    .Search2:hover input[type='search'] {
+        width: 250px;
+        height: 25px;
+    }
+
+    .main  .content .miniform {
+        display: inline-block;
+        background-color: #f2f4f8;
+        padding: 30px 45px;
+        color: #99a1b3;
+        font-size: 38px;
+        width: 87%;
+    }
+
+    .main .miniform .icons i {
+        padding: 0;
+    }
+
+    .main .miniform .icons i:last-child {
+        margin-left: 48px;
+    }
+
+    .main .post {
+        font-size: 24px;
+        margin: 60px;
+    }
+
+    .main .post .userInf {
+        margin-left: 80px;
+    }
+
+    .main .post .member {
+        margin-left: 10px;
+    }
+
+    .main .post .comments {
+        margin-right: 0;
+    }
+
+    .main .post .title {
+        font-size: 28px;
+    }
+
+    .main .post .text {
+        font-size: 25px;
+    }
+
+    .main .buttons {
+        margin: 84px 0 89px;
+    }
+
+    .main .buttons a {
+        font-size: 22px;
+    }
+
+    .main .buttons a  {
+        padding-right: 20px;
+    }
+
+    .main.buttons a {
+        padding-left: 20px;
+    }
+
+    .main .buttons a:first-child {
+        padding: 28px 35px 28px 30px;
+        margin-right: 14px;
+    }
+
+    .main .buttons a:last-child {
+        padding: 28px 30px 28px 40px;
+        margin-right: 0;
+    }
+
+    .main .footer .footerNav {
+        text-align: center;
+        padding: 30px 0;
+        font-size: 18px;
+    }
+
+    .main .footer .footerNav a {
+        padding: 0;
+    }
+
+    .main .miniform .icons {
+        float: right;
+    }
+}
+
+.userPhotoBig {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 45px;
+}
+
+.mini {
+    color: white;
+    text-align: center;
+}
+
+.mini i {
+    font-size: 36px;
+    padding: 32px 0 32px 10px;
+}
+
+.mini span {
+    font: 36px Arial;
+    margin: 0 65px 0 50px;
+}
+
+.mini img {
+    position: relative;
+    top: 16px;
+}
+
+.mini .logo {
+    margin-left: 35px;
+}
+
+
+
+.mini i:hover {
+    color: grey;
+}
+
+
+.fa {
+    padding-right: 32px;
+}
+
+@media screen and (max-width: 610px) {
+    .main  .post {
+        font-size: 14px;
+        margin: 30px 20px;
+    }
+
+    .main .userInf .comments {
+        float: none;
+        display: block;
+        padding-top: 5px;
+    }
+
+    .main .userInf .title {
+        font-size: 18px;
+    }
+
+    .main .userInf .text {
+        font-size: 16px;
+    }
+    .mini span {
+        font-size: 20px;
+        margin: 0 13px;
+    }
+    .mini i {
+        font-size: 25px;
+    }
+
+    .mini .fa-bars {
+        float: left;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+    .mini .logo {
+        width: 60px;
+        margin-left: 15px;
+    }
+
+
+    .mini .userPhotoBig {
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+    }
+
+    .main .content h1 {
+        font-size: 34px;
+        padding: 25px 10px;
+    }
+
+    .main .content h1 i {
+        padding: 0;
+    }
+
+    .main .content h1 span {
+        margin-left: 0;
+    }
+
+    .main .content .miniform {
+        font-size: 28px;
+        padding: 15px 40px;
+    }
+
+    .Search2:hover input[type='search'] {
+        width: 145px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .main .miniform {
+        padding: 15px;
+        width: 93%;
+    }
+
+    .main .miniform .icons i:last-child {
+        margin-left: 10px;
+    }
+}
+
+.nav {
+    background-color: #646d81;
+    height: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 7px 0 12px;
+    margin-right: 26px;
+    border-top: solid #646d81 5px;
+    transition: .3s ease;
+}
+
+.nav a:hover {
+    border-top: solid white 5px;
+}
+
+.flex {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 3px 10px #e0e2e6;
+}
+
+.menu {
+    border-right: 1px solid #E0E4ED;
+    width: 170px;
+    display: block;
+    padding: 20px 0 0 0;
+    float: left;
+}
+.menu .submenu {
+    margin-top: 32px;
+    padding: 10px 30px 10px 25px;
+    font: 18px Georgia;
+    color: black;
+    border-left: 5px solid white;
+}
+
+.menu li {
+    list-style-type: none;
+    padding: 10px 30px 10px 25px;
+    border-left: solid white 5px;
+    transition: .4s ease;
+    white-space: pre-wrap;
+}
+.menu li a {
+    color: #99A1B3;
+}
+
+.menu li:hover {
+    border-left: solid #646d81 5px;
+}
+
+
+
+
+
+
+
+
+.content {
+    display: block;
+    width: calc(100% - 170px);
+}
+
+.content h1 {
+    padding: 30px 0 20px 30px;
+    font: 30px Georgia;
+    display: block;
+}
+
+.content h1 span {
+    margin-left: 28px;
+    border-bottom: dashed 1px;
+}
+
+.form {
+    background-color: #f2f4f8;
+    padding: 5px 30px;
+    color: #99a1b3;
+}
+
+.form input[type="text"] {
+    padding-left: 10px;
+    outline: none;
+    font: 14px Arial;
+    width: 280px;
+    height: 40px;
+    border: solid #d6d9e1 1px;
+    border-radius: 5px;
+    display: inline-block;
+    background: url(images/search.png) no-repeat 260px 9px;
+    background-color: white;
+}
+
+.item {
+    display: inline-block;
+    float: right;
+    position: relative;
+    bottom: 30px;
+}
+
+.item span {
+    margin: 0 86px 0 0;
+    font: 12px Georgia;
+}
+
+.item i {
+    margin-right: 30px;
+    font-size: 18px;
+    padding: 0;
+}
+
+@media screen and (max-width:780px) {
+    .item span {
+        margin: 0 15px 0 0;
+    }
+}
+
+.post {
+    font: 12px Arial;
+    color: #99a1b3;
+    margin: 30px;
+}
+
+.image {
+    float: left;
+    margin-right: 14px;
+}
+.image img{
+    width: 60px;
+    height:60px;
+    border-radius: 5px;
+}
+
+.userInf {
+    margin-left: 74px;
+}
+
+.userInf .fa {
+    padding: 0;
+}
+
+.member {
+    padding: 5px 15px;
+    background-color: #f2f4f8;
+    border-radius: 5px;
+    margin-left: 26px;
+}
+
+.comments {
+    float: right;
+    margin-right: 28px;
+}
+
+.comments span {
+    margin-right: 10px;
+}
+
+.title {
+    color: #4f9cd4;
+    font: bold 16px Arial;
+    padding: 5px 0 5px;
+}
+
+.text {
+    color: black;
+    font-size: 14px;
+    padding-bottom: 14px;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 86px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: black;
+    font: 14px Arial;
+    border: solid #99a1b3 1px;
+    border-radius: 4px;
+    padding: 10px 13px 10px 18px;
+}
+
+.buttons a:first-child {
+    margin-right: 10px;
+    padding: 10px 18px 10px 13px;
+}
+
+.buttons a:last-child {
+    margin-right: 10px;
+    padding: 10px 13px 10px 18px;
+}
+
+.buttons a .fa-angle-left {
+    padding-right: 12px;
+}
+
+.buttons a .fa-angle-right {
+    padding: 0 0 0 12px;
+}
+
+.footer {
+    color: #99a1b3;
+    font: 12px Arial;
+}
+
+.footerNav {
+    background-color: #f2f4f8;
+    padding-left: 28px;
+    margin-bottom: 1px;
+}
+
+.footerNav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 0;
+    margin-right: 18px;
+    color: #99a1b3;
+}
+
+.footerInf {
+    background-color: #f2f4f8;
+    padding:0 10px 10px 20px;
+}
+
+.footerInf img {
+    margin-right: 10px;
+    width:40px;
+    height:40px;
+    position: relative;
+    top: 15px;
+}
+
+@media screen and (max-width: 610px) {
+    .main .content .buttons {
+        margin: 60px 0 70px;
+    }
+
+    .main .content .buttons a {
+        font-size: 16px;
+    }
+
+    .main .content .buttons a:first-child {
+        padding: 17px 30px 17px 20px;
+    }
+
+    .main .content .buttons a:last-child {
+        padding: 17px 20px 17px 30px;
+    }
+
+    .main .content .buttons a .fa-angle-left {
+        padding-right: 8px;
+    }
+
+    .main .content .buttons a .fa-angle-right {
+        padding-left: 8px;
+    }
+
+    .main .content .footer .footerNav {
+        text-align: center;
+        padding: 30px 0;
+        font-size: 14px;
+    }
+
+    .main .content .footer .footerNav a {
+        margin-right: 8px;
+    }
+}

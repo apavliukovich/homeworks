@@ -1,7 +1,7 @@
 function func(obj){
     var newObj = {};
     var firstNames = [];
-    var nameObj = {};
+    var doubleNameObj = {};
 
 
     for (var k in obj){
@@ -17,16 +17,16 @@ function func(obj){
             var elementNext = firstNames[j];
             if(elementPrevious === elementNext){
                 counter++;
-                nameObj[elementNext] = counter;
+                doubleNameObj[elementNext] = counter;
             }
         }
 
-        if(nameObj[elementPrevious] <= 1){
-            delete nameObj[elementPrevious];
+        if(doubleNameObj[elementPrevious] <= 1){
+            delete doubleNameObj[elementPrevious];
         }
 
     }
-    newObj['Дублирующиеся значения'] = nameObj;
+    newObj['Дублирующиеся значения'] = doubleNameObj;
 
     return newObj;
 }
