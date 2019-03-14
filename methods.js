@@ -63,7 +63,7 @@ function countRepeat(p) {
     }
 
     maxCount = arrValues[0];
-    for(var j = 0; j < arrK.length; j++){
+    for(var j = 0; j < arrKey.length; j++){
         if(maxCount <= arrValues[j]){
             maxCount = arrValues[j];
             repeatWord = '"' + arrKey[j] + '"';
