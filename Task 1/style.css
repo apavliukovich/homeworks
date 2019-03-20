@@ -1,0 +1,19 @@
+span {
+    font-family: "Comic Sans", monospace;
+    font-size: 18px;
+}
+
+table {
+    border: 1px solid black;
+    border-spacing: 0;
+}
+
+.white {
+    background-color: white;
+    padding: 20px;
+}
+
+.black {
+    background-color: black;
+    padding: 20px;
+}
