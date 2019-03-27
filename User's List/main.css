@@ -1,0 +1,82 @@
+body {
+    background-color: #323D42;
+    font-family: 'Grotesk', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    justify-content: flex-end;
+    margin: auto;
+}
+
+.container-button {
+    background-color: #fc5950;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.wrap {
+    display: flex;
+    width: 800px;
+    margin: auto;
+}
+
+.user {
+    background-color: #fc5950;
+    color: #ffffff;
+    font-weight: bold;
+    margin: -45px 20px 0 0;
+    padding: 15px 30px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.checked {
+    background-color: #eaeaea;
+    color: black;
+}
+
+.main-block {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    background-color: #eaeaea;
+    margin: 0 auto;
+    border-radius: 0 10px 10px 10px;
+    height: 250px;
+}
+
+.main-block-avatar {
+    width: 150px;
+    height: 150px;
+    margin: 0 30px;
+    border-radius: 15px;
+}
+
+.main-block-description {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+}
+
+.main-block-description-firstName {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.error {
+    display: flex;
+    margin: 20px auto;
+    background-color: #eaeaea;
+    height: 250px;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 10px;
+}
