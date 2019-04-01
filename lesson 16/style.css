@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+
+#clock {
+    width: 600px;
+    margin: 100px auto 0 auto;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ccc;
+    font: 20px "Comic Sans MS";
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.showSavePoint {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+}
+
+span {
+    display: block;
+}
