@@ -3,7 +3,7 @@ body {
 }
 
 #clock {
-    width: 600px;
+    width: 700px;
     margin: 100px auto 0 auto;
     font-size: 50px;
     font-weight: bold;
@@ -11,15 +11,21 @@ body {
 }
 
 button {
-    padding: 10px 15px;
+    width: 200px;
+    height: 50px;
     background-color: #ccc;
     font: 20px "Comic Sans MS";
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 13px;
+}
+
+#start {
+    margin-right: 0;
 }
 
 .showSavePoint {
-    width: 600px;
+    width: 700px;
     margin: 0 auto;
     font-size: 20px;
     color: white;
@@ -28,3 +34,4 @@ button {
 span {
     display: block;
 }
+
