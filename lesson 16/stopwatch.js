@@ -50,10 +50,10 @@ function clockRun() {
             sec = Math.floor(time / 100);
             min = Math.floor(time / 100 / 60);
 
-            if (min < 10) min = "0" + min;
+            if (min < 10) min = '0' + min;
             if (sec >= 60) sec = sec % 60;
-            if (sec < 10) sec = "0" + sec;
-            if (ms < 10) ms = "0" + ms;
+            if (sec < 10) sec = '0' + sec;
+            if (ms < 10) ms = '0' + ms;
             if (time >= 3.6e6) {
                 alert('прошел один час!');
                 return;
