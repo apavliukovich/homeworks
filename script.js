@@ -137,7 +137,7 @@
         }
 
         _getFormattedFoodAmount() {
-            return this._foodAmount + 'гр.';
+            return `${this._foodAmount} гр.`;
         }
 
         dailyNorm(amount) {
