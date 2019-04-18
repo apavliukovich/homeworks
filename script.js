@@ -96,13 +96,7 @@
 
 {
     function getArrOfObj(...arrOfNames) {
-        return arrOfNames.map((item, i) => {
-            const obj = {};
-            obj[`User ${i + 1}`] = item;
-
-            return obj
-
-        });
+        return arrOfNames.map((item, i) => ({[`User ${i + 1}`] : item}));
     }
 
     getArrOfObj('Вася', 'Петя', 'Григорий')
