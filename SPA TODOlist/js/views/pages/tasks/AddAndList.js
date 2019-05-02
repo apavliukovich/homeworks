@@ -21,10 +21,10 @@ class TasksList extends Component {
                 <h1 class="page-title">Tasks List</h1>
                 
                 <div class="task-add">
-                    <input class="task-add__title" type="text">             
+                    <input class="task-add__title" type="text">
+                    <textarea class="task-add__description" placeholder="Add the description here..."></textarea>
                     <button class="task-add__btn-add button" disabled>Add Task</button>
                     <button class="task-add__btn-clear button" >Clear Tasks</button>
-                    <textarea class="task-add__description" placeholder="Add the description here..."></textarea>
                 </div>       
                   
                 <div class="tasks-list">               
